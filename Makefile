@@ -1,4 +1,4 @@
 CFLAGS=$(shell pkg-config --cflags --libs gtk+-3.0)
 
-all: gtk-module-keepass.c
-	$(CC) $(CFLAGS) -g -shared -fPIC gtk-module-keepass.c -o gtk-module-keepass.so
+all: pass.c gtk-module-pass.c
+	$(CC) $(CFLAGS) -g -shared -fPIC pass.c gtk-module-pass.c -o gtk-module-pass.so
